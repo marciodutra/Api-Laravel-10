@@ -15,4 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::namespace(value:'Site')->group(function () {
     Route::get(uri:'/', action:'HomeController@index');
+
+    Route::get(uri:'produtos', action:'CategoryController@index');
 });
